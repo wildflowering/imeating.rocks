@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Menlo';
+  src: url('menlo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Menlo', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+body {
+  flex-direction: column;
+}
+
+img {
+  width: 300px;
+  height: auto;
+  margin-top: 2em; 
+}
