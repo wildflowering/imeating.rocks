@@ -1,0 +1,42 @@
+html {
+	font-family: "Barecast", "Inconsolata", Menlo, Chicago, Geneva;
+    font-size: 12px;
+}
+
+
+@font-face {
+    font-family: Barecast;
+    src: url("assets/fonts/barecastThin.woff2") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Barecast;
+    src: url("assets/fonts/barecastRegular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+	margin: unset;
+}
+
+
+/* headings */
+
+h1, h2, h3, h4, h5, h6 {
+	margin-block: unset;
+}
+
+
+/* inline */
+
+a {
+	color: unset;
+	text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

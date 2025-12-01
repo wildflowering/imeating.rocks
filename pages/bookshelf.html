@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookshelf</title>
+<style>
+    body { font-family: sans-serif; background: #f2f2f2; padding: 20px; }
+    .book { background: white; padding: 15px; margin-bottom: 20px; display: flex; gap: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+    .cover { width: 125px; object-fit: cover;}
+    .info { max-width: 600px; }
+    .title { font-weight: bold; font-size: 1.2em; margin-bottom: 5px; }
+    .author, .date { color: #555; font-size: 0.9em; }
+    .review { margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <div id="book-container"></div>
+    <script>
+    async function loadBooks() {
+      try {
+        // Adjusted path to your JSON file
+        const response = await fetch('../assets/book_reviews.json');
+        if (!response.ok) throw new Error('Failed to load JSON');
+        const books = await response.json();
+
+        const container = document.getElementById('book-container');
+
+        books.forEach(book => {
+          const bookDiv = document.createElement('div');
+          bookDiv.className = 'book';
+
+          // Adjust cover path relative to books.html
+          const coverPath = `../assets/images/books/${book.cover}`;
+
+          bookDiv.innerHTML = `
+            <img class="cover" src="${coverPath}" alt="${book.title} cover">
+            <div class="info">
+              <div class="title">${book.title}</div>
+              <div class="author">by ${book.author}</div>
+              <div class="review">${book.review}</div>
+            </div>
+          `;
+          container.appendChild(bookDiv);
+        });
+      } catch (err) {
+        console.error(err);
+        document.getElementById('book-container').innerHTML = 'Failed to load book reviews.';
+      }
+    }
+
+    loadBooks();
+    </script>
+
+</body>
+</html>
+
+
+<!-- cmyk dither: 250px; -->
