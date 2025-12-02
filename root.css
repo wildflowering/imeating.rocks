@@ -18,6 +18,13 @@ html {
     font-style: normal;
 }
 
+@font-face {
+    font-family: Estrella;
+    src: url("assets/fonts/estrella.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
 	margin: unset;
 }
