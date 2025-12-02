@@ -3,6 +3,15 @@ html {
     font-size: 12px;
 }
 
+body {
+    background: linear-gradient(to bottom, #f4ebdf, transparent calc(50% + 72px)) #f4f4f1 fixed;
+    margin: 0;
+	height: 100vh;
+    display: flex;
+    justify-content: center;
+	position: relative;
+}
+
 
 @font-face {
     font-family: Barecast;
@@ -15,13 +24,6 @@ html {
     font-family: Barecast;
     src: url("assets/fonts/barecastRegular.woff2") format("woff2");
     font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Estrella;
-    src: url("assets/fonts/estrella.woff2") format("woff2");
-    font-weight: normal;
     font-style: normal;
 }
 
@@ -40,10 +42,14 @@ h1, h2, h3, h4, h5, h6 {
 /* inline */
 
 a {
-	color: unset;
+    color: olivedrab;
 	text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+img {
+    image-rendering: pixelated;
 }

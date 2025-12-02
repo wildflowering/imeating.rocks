@@ -1,34 +1,15 @@
-body {
-    background: linear-gradient(to bottom, #f4ebdf, transparent calc(50% + 72px)) #f4f4f1 fixed;
-    margin: 0;
-	height: 100vh;
-    display: flex;
-    justify-content: center;
-	position: relative;
-}
-
-
 /*
 OVERARCHING
 */
 
-a {
-	color: olivedrab;
-	/* color: color-mix(in srgb, currentcolor, #45d1a1); */
-}
-
-img {
-    image-rendering: pixelated;
-}
-
 #root-wrapper {
 	position: absolute;
-	margin-top: 80px;
     display: flex;
     gap: 2.5em;
+    margin-top: 80px;
 }
 
-#header_title {
+#header-title {
 	position: absolute;
 	margin-top: -15px;
 	margin-left: -15px;
@@ -37,7 +18,7 @@ img {
     padding: 0.5em 0.5em;
 }
 
-#header_img {
+#header-img {
 	height: 180px;
 	border: 1px dotted black;
 }
@@ -62,11 +43,12 @@ MAIN WRAPPER STUFF
 
     h3 {
         margin: 0;
+        padding-left: 0.5em;
         margin-left: -2.5em;
         margin-right: -1em;
         background-color: #f5eee4;
         color: olivedrab;
-        filter: drop-shadow(1px 1px 0 #e8d0b0) drop-shadow(-1px -1px 0 #e8d0b0);
+        border: 1px solid #e8d0b0;
 		font-size: 13.5px;
     }
 
@@ -139,7 +121,7 @@ SIDE WRAPPER STUFF
 		margin-right: -1em;
         background-color: #f5eee4;
         color: olivedrab;
-        filter: drop-shadow(1px 1px 0 #e8d0b0) drop-shadow(-1px -1px 0 #e8d0b0);
+        border: 1px solid #e8d0b0;
 		font-size: 13.5px;
 	}
 }
