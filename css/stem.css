@@ -61,8 +61,8 @@ header {
     width: 800px;
     height: 180px;
     object-fit: cover;
-    object-position: 0% 70%;
     margin-bottom: -10px;
+    image-rendering: unset;
 }
 
 #header-title {
