@@ -10,12 +10,21 @@ OVERARCHING
 }
 
 #header-title {
-	position: absolute;
+    position: absolute;
 	margin-top: -15px;
 	margin-left: -15px;
 	background-color: #fefefa;
 	border: 1px dotted black;
-    padding: 0.5em 0.5em;
+    padding: 0.125em 0.5em;
+
+    font-family: "Comico", "Menlo";
+    font-size: 30px;
+    color: #fefefa; 
+    text-shadow:
+        -0.85px -0.85px 0 black,
+        0.85px -0.85px 0 black,
+        -0.85px 0.85px 0 black,
+        0.85px 0.85px 0 black;
 }
 
 #header-img {

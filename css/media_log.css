@@ -1,0 +1,26 @@
+.media-log {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    border: 1px dotted black;
+    padding: 0.25em 1em;
+    background-color: #fefefa;
+
+    p {
+        margin: 10px 5px;
+    }
+}
+
+h2 {
+    padding: 5px 5px 5px 5px;
+    font-family: "Comico";
+    text-align: center;
+    color: #fefefa;
+    background-color: #7d9267;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+

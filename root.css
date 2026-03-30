@@ -27,6 +27,13 @@ body {
     font-style: normal;
 }
 
+@font-face {
+    font-family: Comico;
+    src: url("assets/fonts/comicoRegular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
 	margin: unset;
 }

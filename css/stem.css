@@ -67,11 +67,17 @@ header {
 
 #header-title {
     width: max-content;
-    height: 50px;
-    margin: -35px 0px 20px -15px;
-	background-color: #fefefa;
-	border: 1px dotted black;
-    padding: 0.5em 0.5em;
+    margin: -45px 0px 0px 15px;
+    padding-bottom: 25px;
+
+    font-family: "Comico", "Menlo";
+    font-size: 37px;
+    color: #fefefa; 
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
 }
 
 
