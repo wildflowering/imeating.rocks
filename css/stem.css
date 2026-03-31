@@ -1,7 +1,7 @@
 #root-wrapper {
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 #stem-wrapper {
@@ -67,7 +67,7 @@ header {
 
 #header-title {
     width: max-content;
-    margin: -45px 0px 0px 15px;
+    margin: -45px 0px 0px 25px;
     padding-bottom: 25px;
 
     font-family: "Comico", "Menlo";

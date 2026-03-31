@@ -18,9 +18,3 @@ h2 {
     color: #fefefa;
     background-color: #7d9267;
 }
-
-.info {
-    display: flex;
-    flex-direction: column;
-}
-
