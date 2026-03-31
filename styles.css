@@ -146,8 +146,8 @@ SIDE WRAPPER STUFF
 	position: relative;
 	height: 240px;
 	border: 1px dotted black;
-	background: radial-gradient(circle, #999 1px, transparent 1px);
-	background-size: 20px 20px;
+	/* background: radial-gradient(circle, #999 1px, transparent 1px);
+	background-size: 20px 20px; */
 	background-color: #fefefa;
 	margin: -9px 0px 20px -9px;
 
@@ -195,7 +195,7 @@ SIDE WRAPPER STUFF
 
 
 #updates {
-    max-height: 150px;
+    max-height: 140px;
     overflow-y: auto;
     margin-right: -10px;
 

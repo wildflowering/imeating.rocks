@@ -62,11 +62,27 @@
             </nav>
 
             <img class="plantdiv" src="/assets/images/plantdiv.png" alt="planty text separator">
-            <div class="side-box">
-                i'll put something else here i bromise!!
+
+            <div class="side-box" style="padding-top:7px;padding-bottom:7px;">
+                <img src="/assets/images/music.gif" alt="music" style="font-size: 12px;"> <font style="color:olivedrab">recently played...</font>
+                <span id="song" style="color: rgb(0, 0, 0);">⏳</span>
+                <script type="text/javascript">
+                        let user = 'safflowering';
+                        let url = 'https://lastfm-last-played.biancarosa.com.br/' + user + '/latest-song';
+                        let song = document.querySelector('#song');
+                        fetch(url)
+                        .then(function (response) {
+                            return response.json()
+                        }).then(function (json) {
+                        song.innerHTML = json['track']['name'] + ' - ' + json['track']['artist']['#text'];
+                        });
+                </script>
             </div>
-            <div class="side-box">
-                and here too!!!
+
+            <div class="side-box" style="padding-top:7px;padding-bottom:7px;">
+                "that's going straight to the pool room"
+                <br>
+                <span style="display:block;text-align:right;">- daryl</span>
             </div>
             <div class="side-box">
                 <h3>✻ updates</h3>
