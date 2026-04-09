@@ -1,4 +1,4 @@
-.media-log {
+.main-box {
     display: flex;
     position: relative;
     flex-direction: column;
@@ -9,6 +9,23 @@
     p {
         margin: 10px 5px;
     }
+
+    div.thoughts {
+        font-family: inherit;
+        font-size: inherit;
+        white-space: pre-wrap;
+        margin: 10px 10px 10px 10px;
+        display: none;
+    }
+
+    div.thoughts.open {
+        display: block;
+    }
+}
+
+#nav {
+    margin-top: -5px;
+    text-align: center;
 }
 
 h2 {
@@ -18,3 +35,33 @@ h2 {
     color: #fefefa;
     background-color: #7d9267;
 }
+
+.media-info {
+    margin: -5px 0px -5px 0;
+    display: flex;
+    width: 100%;
+}
+
+.media-type {
+    width: 20px;
+}
+
+.media-info .right {
+    text-align: right;
+    margin-left: auto;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 5px;
+    align-self: center;
+    user-select: none;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+

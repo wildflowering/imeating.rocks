@@ -1,11 +1,11 @@
 #root-wrapper {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 #stem-wrapper {
-    width: 800px;
+    width: 850px;
     display: flex;
     gap: 2em;
 }
@@ -42,6 +42,10 @@
     }
 }
 
+.main-box:last-child {
+    margin-bottom: 70px;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -58,7 +62,6 @@ header {
 }
 
 #header-img {
-    width: 800px;
     height: 180px;
     object-fit: cover;
     margin-bottom: -10px;
@@ -82,14 +85,14 @@ header {
 
 
 #main-wrapper {
-    flex: 1 1 75%;
+    flex: 1 1 77.5%;
 	display: flex;
     flex-direction: column;
     gap: 1em;
 }
 
 #side-wrapper {
-    flex: 1 1 25%;
+    flex: 1 1 22.5%;
     display: flex;
     flex-direction: column;
     gap: 1em;
