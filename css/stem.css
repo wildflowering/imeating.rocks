@@ -1,13 +1,41 @@
+html {
+    background: linear-gradient(to bottom, #f4ebdf, transparent calc(50% + 72px)) #f4f3f1 fixed;
+}
+
+.element {
+    position: fixed;
+    width: 100%;
+    height: 35%;
+    background:
+        linear-gradient(#ffd79c66, #ffd79c66),
+        url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdanielilett.com%2Fimg%2Ftut3%2Fpart9-dither-example.jpg&f=1&nofb=1&ipt=f0574668a0f6b2e28c37da302b81caa27980e9eb0b71f2540c095d8d4fbff07c') repeat-x;
+    mask-image: linear-gradient(to bottom, black, transparent);
+    opacity: .35;
+    filter: contrast(.7) brightness(1.8);
+    z-index: -1;
+    image-rendering: pixelated;
+}
+
 #root-wrapper {
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 3rem;
 }
 
 #stem-wrapper {
-    width: 850px;
+    width: 72rem;
     display: flex;
+    justify-content: center;
     gap: 2em;
+}
+
+h2 {
+    margin-top: 1.25rem;
+    padding: 0.4rem;
+    font-family: "Comico";
+    text-align: center;
+    color: #fefefa;
+    background-color: #7d9267;
 }
 
 .main-box {
@@ -18,32 +46,31 @@
 
     h3 {
         margin: 0;
-        padding-left: 0.5em;
-        margin-left: -2.5em;
-        margin-right: -1em;
+        padding-left: 0.5rem;
+        margin: 0rem -1.25rem 0rem -2.5rem;
         background-color: #f5eee4;
         color: olivedrab;
         border: 1px solid #e8d0b0;
-		font-size: 13.5px;
+		font-size: 1.1rem;
     }
 
     p {
-        margin: 15px 5px;
+        margin: 0.8rem 0.4rem;
     }
 
     ul {
         list-style: none;
         padding-left: 0;
-        margin: 10px 5px;
+        margin: 0.8rem 0.4rem;
     }
 
     li {
-        margin-bottom: 0.2em;
+        margin-bottom: 0.2rem;
     }
 }
 
 .main-box:last-child {
-    margin-bottom: 70px;
+    margin-bottom: 6rem;
 }
 
 header {
@@ -52,29 +79,30 @@ header {
 
     h3 {
         position: relative;
-        margin-left: -2.5em;
-        bottom: -35px;
+        margin-left: -2.5rem;
+        margin-right: -0.25rem;
+        bottom: -3rem;
         background-color: #f5eee4;
         color: olivedrab;
         border: 1px solid #e8d0b0;
-        font-size: 13.5px;
+        font-size: 1.1rem;
     }
 }
 
 #header-img {
-    height: 180px;
+    height: 15rem;
     object-fit: cover;
-    margin-bottom: -10px;
+    margin-bottom: -0.8rem;
     image-rendering: unset;
 }
 
 #header-title {
     width: max-content;
-    margin: -45px 0px 0px 25px;
-    padding-bottom: 25px;
+    margin: -4rem 0rem 0rem 2rem;
+    padding-bottom: 2rem;
 
     font-family: "Comico", "Menlo";
-    font-size: 37px;
+    font-size: 3rem;
     color: #fefefa; 
     text-shadow:
         -1px -1px 0 black,
@@ -85,18 +113,18 @@ header {
 
 
 #main-wrapper {
-    flex: 1 1 77.5%;
+    flex: 1 1 75%;
 	display: flex;
     flex-direction: column;
     gap: 1em;
 }
 
 #side-wrapper {
-    flex: 1 1 22.5%;
+    flex: 1 1 25%;
     display: flex;
     flex-direction: column;
     gap: 1em;
-    font-size: 10.5px;
+    font-size: 0.875rem;
 }
 
 .side-box {
@@ -112,21 +140,21 @@ header {
         background-color: #f5eee4;
         color: olivedrab;
         border: 1px solid #e8d0b0;
-		font-size: 13.5px;
+		font-size: 1.1rem;
 	}
 
     p {
-        margin: 10px 5px;
+        margin: 0.8rem 0.4rem;
     }
 
     ul {
         list-style: none;
         padding-left: 0;
-        margin: 15px 5px;
+        margin: 1.25rem 0.4rem;
     }
 
     li {
-        margin-bottom: 15px;
+        margin-bottom: 1.25rem;
     }
 
     li:last-child {

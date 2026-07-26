@@ -14,6 +14,7 @@
     <title>where rolling stones gather moss</title>
 </head>
 <body>
+    <div class="element"></div>
     <div id="root-wrapper">
 
         <div id="main-wrapper">
@@ -31,14 +32,14 @@
                 <div class="main-box poppin-text">
                     <h3>✻ what's poppin?</h3>
                     <ul>
-                        <li>📺 the discreet charm of the bourgeoisie (1972)</li>
+                        <li>📺 the bear (2022)</li>
                         <li>🕹️ minecraft modpacks</li>
-                        <li>📖 the well of loneliness (1928)</li>
+                        <li>📖 the magus (1965)</li>
                         <li>💡 no bright ideas..</li>
                     </ul>
                 </div>
                 <div>
-                    <center style="font-size:13px;margin:6px 0px 10px 0px;">check 'em out!!</center>
+                    <center style="font-size:1.1rem;margin:0.5rem 0rem 0.83rem 0rem;">check 'em out!!</center>
                     <img src="/assets/images/gaming_dog.png" alt="gaming dog">
                     <img src="/assets/images/reading_dog.png" alt="reading dog">
                 </div>
@@ -46,10 +47,10 @@
 
             <div class="main-box">
                 <h3>✻ latest change!!</h3>
-                <p><a href="/pages/media_log.html"><strong>08.04.26</strong>: I read 17776!</a></p>
+                <p><a href="/pages/media_log.html"><strong>17.06.26</strong>: watched ze Odyssey</a></p>
             </div>
 
-            <center style="font-size:11px;">est. nov 2025</center>
+            <center style="font-size:0.875rem;">est. nov 2025</center>
 
         </div>
 
@@ -64,7 +65,7 @@
             <img class="plantdiv" src="/assets/images/plantdiv.png" alt="planty text separator">
 
             <div class="side-box" style="padding-top:7px;padding-bottom:7px;">
-                <img src="/assets/images/music.gif" alt="music" style="font-size: 12px;"> <font style="color:olivedrab">recently played...</font>
+                <img src="/assets/images/music.gif" alt="music" style="font-size: 12px;"> <font style="color:olivedrab">recently listened...</font>
                 <br>
                 <span id="song" style="color: rgb(0, 0, 0);">⏳</span>
                 <script type="text/javascript">
@@ -73,9 +74,9 @@
                         let song = document.querySelector('#song');
                         fetch(url)
                         .then(function (response) {
-                            return response.json()
-                        }).then(function (json) {
-                        song.innerHTML = json['track']['name'] + ' - ' + json['track']['artist']['#text'];
+                                return response.json()
+                            }).then(function (json) {
+                            song.innerHTML = json['track']['name'] + ' - ' + json['track']['artist']['#text'];
                         });
                 </script>
             </div>
@@ -84,6 +85,7 @@
                 <h3>✻ updates</h3>
                 <div id="updates">
                     <ul>
+                        <li><strong>26.07.26</strong>: background and style changes (with help from constructodog)
                         <li><strong>10.04.26</strong>: <a href="/pages/media_log.html">media log</a> is fully set up! (or at least, to a satisfactory degree)</li>
                         <li><strong>31.03.26</strong>: back in the new year!! starting to set up my <a href="/pages/media_log.html">media log</a></li>
                         <li><strong>02.12.25</strong>: renovated with the help of constructodog</li>

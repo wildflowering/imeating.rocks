@@ -6,15 +6,11 @@
     padding: 0.25em 1em;
     background-color: #fefefa;
 
-    p {
-        margin: 10px 5px;
-    }
-
     div.thoughts {
         font-family: inherit;
         font-size: inherit;
         white-space: pre-wrap;
-        margin: 10px 10px 10px 10px;
+        margin: 0.8rem;
         display: none;
     }
 
@@ -24,26 +20,18 @@
 }
 
 #nav {
-    margin-top: -5px;
+    margin-top: -0.4rem;
     text-align: center;
-}
-
-h2 {
-    padding: 5px 5px 5px 5px;
-    font-family: "Comico";
-    text-align: center;
-    color: #fefefa;
-    background-color: #7d9267;
 }
 
 .media-info {
-    margin: -5px 0px -5px 0;
+    margin: -0.4rem 0rem -0.4rem 0rem;
     display: flex;
     width: 100%;
 }
 
 .media-type {
-    width: 20px;
+    width: 1.6rem;
 }
 
 .media-info .right {
@@ -55,7 +43,7 @@ button {
     all: unset;
     cursor: pointer;
     text-decoration: none;
-    margin-bottom: 5px;
+    margin-bottom: 0.4rem;
     align-self: center;
     user-select: none;
 }

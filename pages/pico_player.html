@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>pico player</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../root.css">
+		<link rel="stylesheet" type="text/css" href="../css/stem.css">
+      <link rel="stylesheet" type="text/css" href="../css/pico_player.css">
+	</head>
+	<body>
+      <div id="root-wrapper">
+
+         <div id="play-area">
+            <div id="player"></div>
+         </div>
+
+         <div id="stem-wrapper">
+
+            <div id="main-wrapper">
+               <div class="main-box">
+                  <h3>Currently playing!</h3>
+                  <p>TAD - by doriencey</p>
+                  <p>a fun game about tadpoles in a pond, with some sneaky predators on the side.</p>
+               </div>
+
+               <h2>cartridges</h2>
+               <div class="main-box">
+                  <p>in no particular order, some of my favourite PICO-8 carts:</p>
+                  <div id="carts">
+                     <img src="../assets/carts/shape_of_mind.png" alt="shape_of_mind" class="cart" onclick="p8_run_cart('../assets/carts/shape_of_mind.png');">
+                     <img src="../assets/carts/tad.p8.png" alt="tad" class="cart" onclick="p8_run_cart('../assets/carts/tad.p8.png');">
+                     <img src="../assets/carts/dino_sort.p8.png" alt="dino_sort" class="cart" onclick="p8_run_cart('../assets/carts/dino_sort.p8.png');">
+                     <img src="../assets/carts/moss_moss.p8.png" alt="moss_moss" class="cart" onclick="p8_run_cart('../assets/carts/moss_moss.p8.png');">
+                     <img src="../assets/carts/fuz.p8.png" alt="fuz" class="cart" onclick="p8_run_cart('../assets/carts/fuz.p8.png');">
+                  </div>
+               </div>
+
+               <h2>(external) cartridges</h2>
+               <div class="main-box">
+                  <p>lalalalal</p>
+               </div>
+            </div>
+
+            <div id="side-wrapper">
+               <div class="side-box">
+                  <h3>✻ What is this?</h3>
+                  <p>PICO-8 is a fantasy console for making, sharing and enjoying tiny games!
+               </div>
+            </div>
+
+         </div>
+      </div>
+		<script src="../js/pico_player.js"></script>
+	</body>
+</html>

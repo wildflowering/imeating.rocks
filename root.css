@@ -1,12 +1,11 @@
 html {
 	font-family: "Barecast", "Inconsolata", Menlo, Chicago, Geneva;
-    font-size: 12px;
+    font-size: 0.75rem
 }
 
 body {
-    background: linear-gradient(to bottom, #f4ebdf, transparent calc(50% + 72px)) #f4f4f1 fixed;
     margin: 0;
-	height: 100vh;
+	min-height: 100vh;
     display: flex;
     justify-content: center;
 	position: relative;
